@@ -22,7 +22,7 @@ page 82561 "ADLSE Setup Tables"
                     ApplicationArea = All;
                     Editable = false;
                     Caption = 'Table';
-                    ToolTip = 'Specifies the caption of the table whose data is to exported.';
+                    // ToolTip = 'Specifies the caption of the table whose data is to exported.';
                 }
                 field(Enabled; Rec.Enabled)
                 {
@@ -35,7 +35,7 @@ page 82561 "ADLSE Setup Tables"
                     ApplicationArea = All;
                     Editable = false;
                     Caption = '# Fields selected';
-                    ToolTip = 'Specifies if any field has been chosen to be exported. Click on Choose Fields action to add fields to export.';
+                    // ToolTip = 'Specifies if any field has been chosen to be exported. Click on Choose Fields action to add fields to export.';
 
                     trigger OnDrillDown()
                     begin
@@ -47,40 +47,40 @@ page 82561 "ADLSE Setup Tables"
                     ApplicationArea = All;
                     Editable = false;
                     Caption = 'Entity name';
-                    ToolTip = 'Specifies the name of the entity corresponding to this table on the data lake. The value at the end indicates the table number in Dynamics 365 Business Central.';
+                    // ToolTip = 'Specifies the name of the entity corresponding to this table on the data lake. The value at the end indicates the table number in Dynamics 365 Business Central.';
                 }
                 field(Status; LastRunState)
                 {
                     ApplicationArea = All;
                     Caption = 'Last exported state';
                     Editable = false;
-                    ToolTip = 'Specifies the status of the last export from this table in this company.';
+                    // ToolTip = 'Specifies the status of the last export from this table in this company.';
                 }
                 field(LastRanAt; LastStarted)
                 {
                     ApplicationArea = All;
                     Caption = 'Last started at';
                     Editable = false;
-                    ToolTip = 'Specifies the time of the last export from this table in this company.';
+                    // ToolTip = 'Specifies the time of the last export from this table in this company.';
                 }
                 field(LastError; LastRunError)
                 {
                     ApplicationArea = All;
                     Caption = 'Last error';
                     Editable = false;
-                    ToolTip = 'Specifies the error message from the last export of this table in this company.';
+                    // ToolTip = 'Specifies the error message from the last export of this table in this company.';
                 }
                 field(LastTimestamp; UpdatedLastTimestamp)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the timestamp of the record in this table that was exported last.';
+                    // ToolTip = 'Specifies the timestamp of the record in this table that was exported last.';
                     Caption = 'Last timestamp';
                     Visible = false;
                 }
                 field(LastTimestampDeleted; DeletedRecordLastEntryNo)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies the timestamp of the deleted records in this table that was exported last.';
+                    // ToolTip = 'Specifies the timestamp of the deleted records in this table that was exported last.';
                     Caption = 'Last timestamp deleted';
                     Visible = false;
                 }
@@ -101,7 +101,7 @@ page 82561 "ADLSE Setup Tables"
             {
                 ApplicationArea = All;
                 Caption = 'Add';
-                ToolTip = 'Add a table to be exported.';
+                // ToolTip = 'Add a table to be exported.';
                 Image = New;
                 Enabled = NoExportInProgress;
 
@@ -118,7 +118,7 @@ page 82561 "ADLSE Setup Tables"
             {
                 ApplicationArea = All;
                 Caption = 'Delete';
-                ToolTip = 'Removes a table that had been added to the list meant for export.';
+                // ToolTip = 'Removes a table that had been added to the list meant for export.';
                 Image = Delete;
                 Enabled = NoExportInProgress;
 
@@ -133,7 +133,7 @@ page 82561 "ADLSE Setup Tables"
             {
                 ApplicationArea = All;
                 Caption = 'Choose fields';
-                ToolTip = 'Select the fields of this table to be exported.';
+                // ToolTip = 'Select the fields of this table to be exported.';
                 Image = SelectEntries;
                 Enabled = NoExportInProgress;
 
@@ -147,7 +147,7 @@ page 82561 "ADLSE Setup Tables"
             {
                 ApplicationArea = All;
                 Caption = 'Reset';
-                ToolTip = 'Set the selected tables to export all of its data again.';
+                // ToolTip = 'Set the selected tables to export all of its data again.';
                 Image = ResetStatus;
                 Enabled = NoExportInProgress;
 
@@ -179,7 +179,7 @@ page 82561 "ADLSE Setup Tables"
             {
                 ApplicationArea = All;
                 Caption = 'Execution logs';
-                ToolTip = 'View the execution logs for this table in the currently opened company.';
+                // ToolTip = 'View the execution logs for this table in the currently opened company.';
                 Image = Log;
 
                 trigger OnAction()
@@ -196,7 +196,7 @@ page 82561 "ADLSE Setup Tables"
                 ApplicationArea = All;
                 Caption = 'Import';
                 Image = Import;
-                ToolTip = 'Import a file with BC2ADLS tables and fields.';
+                // ToolTip = 'Import a file with BC2ADLS tables and fields.';
 
                 trigger OnAction()
                 var
@@ -211,7 +211,7 @@ page 82561 "ADLSE Setup Tables"
                 ApplicationArea = All;
                 Caption = 'Export';
                 Image = Export;
-                ToolTip = 'Exports a file with BC2ADLS tables and fields.';
+                // ToolTip = 'Exports a file with BC2ADLS tables and fields.';
 
                 trigger OnAction()
                 var
@@ -227,7 +227,7 @@ page 82561 "ADLSE Setup Tables"
                 ApplicationArea = All;
                 Caption = 'Assign Export Category';
                 Image = Apply;
-                ToolTip = 'Assign an Export Category to the Table.';
+                // ToolTip = 'Assign an Export Category to the Table.';
 
                 trigger OnAction()
                 var

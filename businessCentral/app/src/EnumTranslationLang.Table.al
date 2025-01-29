@@ -14,7 +14,7 @@ table 82568 "ADLSE Enum Translation Lang"
         {
             DataClassification = SystemMetadata;
             Caption = 'Language Code';
-            ToolTip = 'Specifies the language code.';
+            // ToolTip = 'Specifies the language code.';
         }
         field(2; "Table Id"; Integer)
         {
@@ -26,7 +26,7 @@ table 82568 "ADLSE Enum Translation Lang"
         {
             DataClassification = SystemMetadata;
             Caption = 'Compliant Table Name';
-            ToolTip = 'Specifies the compliant table name of the table that is compliant with Data Lake standards.';
+            // ToolTip = 'Specifies the compliant table name of the table that is compliant with Data Lake standards.';
         }
         field(4; "Field Id"; Integer)
         {
@@ -38,7 +38,7 @@ table 82568 "ADLSE Enum Translation Lang"
         {
             DataClassification = SystemMetadata;
             Caption = 'Compliant Object Name';
-            ToolTip = 'Specifies the compliant field name of the field that is compliant with Data Lake standards.';
+            // ToolTip = 'Specifies the compliant field name of the field that is compliant with Data Lake standards.';
         }
         field(6; "Enum Value Id"; Integer)
         {
@@ -50,7 +50,7 @@ table 82568 "ADLSE Enum Translation Lang"
         {
             DataClassification = SystemMetadata;
             Caption = 'Enum Caption';
-            ToolTip = 'Specifies the caption of the enum value.';
+            // ToolTip = 'Specifies the caption of the enum value.';
         }
     }
 

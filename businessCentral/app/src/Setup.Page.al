@@ -29,7 +29,7 @@ page 82560 "ADLSE Setup"
                     field("Tenant ID"; StorageTenantID)
                     {
                         Caption = 'Tenant ID';
-                        ToolTip = 'Specifies the tenant ID which holds the app registration as well as the storage account. Note that they have to be on the same tenant.';
+                        // ToolTip = 'Specifies the tenant ID which holds the app registration as well as the storage account. Note that they have to be on the same tenant.';
 
                         trigger OnValidate()
                         begin
@@ -59,7 +59,7 @@ page 82560 "ADLSE Setup"
                     {
                         Caption = 'Client ID';
                         ExtendedDatatype = Masked;
-                        ToolTip = 'Specifies the application client ID for the Azure App Registration that accesses the storage account.';
+                        // ToolTip = 'Specifies the application client ID for the Azure App Registration that accesses the storage account.';
 
                         trigger OnValidate()
                         begin
@@ -70,7 +70,7 @@ page 82560 "ADLSE Setup"
                     {
                         Caption = 'Client secret';
                         ExtendedDatatype = Masked;
-                        ToolTip = 'Specifies the client secret for the Azure App Registration that accesses the storage account.';
+                        // ToolTip = 'Specifies the client secret for the Azure App Registration that accesses the storage account.';
 
                         trigger OnValidate()
                         begin
@@ -147,7 +147,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Export';
-                ToolTip = 'Starts the export process by spawning different sessions for each table. The action is disabled in case there are export processes currently running, also in other companies.';
+                // ToolTip = 'Starts the export process by spawning different sessions for each table. The action is disabled in case there are export processes currently running, also in other companies.';
                 Image = Start;
                 Enabled = not ExportInProgress;
 
@@ -164,7 +164,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Stop export';
-                ToolTip = 'Tries to stop all sessions that are exporting data, including those that are running in other companies.';
+                // ToolTip = 'Tries to stop all sessions that are exporting data, including those that are running in other companies.';
                 Image = Stop;
 
                 trigger OnAction()
@@ -179,7 +179,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Schema export';
-                ToolTip = 'This will export the schema of the tables selected in the setup to the lake. This is a one-time operation and should be done before the first export of data.';
+                // ToolTip = 'This will export the schema of the tables selected in the setup to the lake. This is a one-time operation and should be done before the first export of data.';
                 Image = Start;
 
                 trigger OnAction()
@@ -194,7 +194,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Clear schema export date';
-                ToolTip = 'This will clear the schema exported on field. If this is cleared you can change the schema and export it again.';
+                // ToolTip = 'This will clear the schema exported on field. If this is cleared you can change the schema and export it again.';
                 Image = ClearLog;
 
                 trigger OnAction()
@@ -210,7 +210,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Schedule export';
-                ToolTip = 'Schedules the export process as a job queue entry.';
+                // ToolTip = 'Schedules the export process as a job queue entry.';
                 Image = Timesheet;
 
                 trigger OnAction()
@@ -225,7 +225,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Clear tracked deleted records';
-                ToolTip = 'Removes the entries in the deleted record list that have already been exported. The codeunit ADLSE Clear Tracked Deletions may be invoked using a job queue entry for the same end.';
+                // ToolTip = 'Removes the entries in the deleted record list that have already been exported. The codeunit ADLSE Clear Tracked Deletions may be invoked using a job queue entry for the same end.';
                 Image = ClearLog;
                 Enabled = TrackedDeletedRecordsExist;
 
@@ -240,7 +240,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Clear execution log';
-                ToolTip = 'Removes the history of the export executions. This should be done periodically to free up storage space.';
+                // ToolTip = 'Removes the history of the export executions. This should be done periodically to free up storage space.';
                 Image = History;
                 Enabled = OldLogsExist;
 
@@ -257,7 +257,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Fix incorrect data';
-                ToolTip = 'Fixes incorrect tables and fields in the setup. This should be done if you have deleted some tables and fields and you cannot disable them.';
+                // ToolTip = 'Fixes incorrect tables and fields in the setup. This should be done if you have deleted some tables and fields and you cannot disable them.';
                 Image = Error;
 
                 trigger OnAction()
@@ -274,7 +274,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Enum translations';
-                ToolTip = 'Show the translations for the enums used in the selected tables.';
+                // ToolTip = 'Show the translations for the enums used in the selected tables.';
                 Image = Translations;
                 RunObject = page "ADLSE Enum Translations";
             }
@@ -282,7 +282,7 @@ page 82560 "ADLSE Setup"
             {
                 ApplicationArea = All;
                 Caption = 'Deleted tables not to sync';
-                ToolTip = 'Shows all the tables that are specified not to be tracked for deletes.';
+                // ToolTip = 'Shows all the tables that are specified not to be tracked for deletes.';
                 Image = Delete;
                 RunObject = page "Deleted Tables Not To Sync";
             }
@@ -290,7 +290,7 @@ page 82560 "ADLSE Setup"
             {
                 Caption = 'Job Queue';
                 ApplicationArea = All;
-                ToolTip = 'Specifies the scheduled Job Queues for the export to Datalake.';
+                // ToolTip = 'Specifies the scheduled Job Queues for the export to Datalake.';
                 Image = BulletList;
                 trigger OnAction()
                 var
@@ -304,7 +304,7 @@ page 82560 "ADLSE Setup"
             {
                 Caption = 'Export Category';
                 ApplicationArea = All;
-                ToolTip = 'Specifies the Export Categories available for scheduling the export to Datalake.';
+                // ToolTip = 'Specifies the Export Categories available for scheduling the export to Datalake.';
                 Image = Export;
                 RunObject = page "ADLSE Export Categories";
             }

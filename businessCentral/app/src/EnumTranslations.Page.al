@@ -34,7 +34,7 @@ page 82569 "ADLSE Enum Translations"
             {
                 ApplicationArea = All;
                 Caption = 'Refresh Options';
-                ToolTip = 'Refresh the options of the enum fields.';
+                // ToolTip = 'Refresh the options of the enum fields.';
                 Image = Refresh;
 
                 trigger OnAction()
@@ -49,7 +49,7 @@ page 82569 "ADLSE Enum Translations"
             {
                 ApplicationArea = All;
                 Caption = 'Translations';
-                ToolTip = 'View the translations of the enum fields.';
+                // ToolTip = 'View the translations of the enum fields.';
                 Image = Language;
 
                 trigger OnAction()

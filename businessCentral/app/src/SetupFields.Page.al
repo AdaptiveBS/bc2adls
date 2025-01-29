@@ -17,10 +17,10 @@ page 82562 "ADLSE Setup Fields"
         {
             repeater(GroupName)
             {
-                field("FieldCaption"; Rec.FieldCaption) 
-		{ 
+                field("FieldCaption"; Rec.FieldCaption)
+                {
                     StyleExpr = StyleExprAsText;
-		}
+                }
 
                 field("Field ID"; Rec."Field ID")
                 {
@@ -29,23 +29,23 @@ page 82562 "ADLSE Setup Fields"
                     Visible = false;
                 }
 
-                field(Enabled; Rec.Enabled) 
-		{ 
+                field(Enabled; Rec.Enabled)
+                {
                     StyleExpr = StyleExprAsText;
-		}
+                }
                 field(IsPartOfPrimaryKey; IsPartOfPrimaryKey)
                 {
                     ApplicationArea = All;
                     Caption = 'Part of Primary Key';
                     Editable = false;
                     StyleExpr = StyleExprAsText;
-                    ToolTip = 'Specifies if the the field is part of the primary key';
+                    // ToolTip = 'Specifies if the the field is part of the primary key';
                 }
                 field(ADLSFieldName; ADLSFieldName)
                 {
                     Caption = 'Attribute name';
                     StyleExpr = StyleExprAsText;
-                    ToolTip = 'Specifies the name of the field for this entity in the data lake.';
+                    // ToolTip = 'Specifies the name of the field for this entity in the data lake.';
                     Editable = false;
                 }
 
@@ -54,7 +54,7 @@ page 82562 "ADLSE Setup Fields"
                     Caption = 'Class';
                     OptionCaption = 'Normal,FlowField,FlowFilter';
                     StyleExpr = StyleExprAsText;
-                    ToolTip = 'Specifies the field class.';
+                    // ToolTip = 'Specifies the field class.';
                     Editable = false;
                     Visible = false;
                 }
@@ -62,7 +62,7 @@ page 82562 "ADLSE Setup Fields"
                 field("Field Type"; FieldTypeName)
                 {
                     Caption = 'Type';
-                    ToolTip = 'Specifies the field type.';
+                    // ToolTip = 'Specifies the field type.';
                     Editable = false;
                     Visible = false;
                 }
@@ -71,7 +71,7 @@ page 82562 "ADLSE Setup Fields"
                 {
                     Caption = 'Obsolete State';
                     OptionCaption = 'No,Pending,Removed';
-                    ToolTip = 'Specifies the Obsolete State of the field.';
+                    // ToolTip = 'Specifies the Obsolete State of the field.';
                     Editable = false;
                     Visible = false;
                 }
@@ -87,7 +87,7 @@ page 82562 "ADLSE Setup Fields"
             {
                 Caption = 'Enable all valid fields';
                 ApplicationArea = All;
-                ToolTip = 'Enables all fields of the table that can be enabled.';
+                // ToolTip = 'Enables all fields of the table that can be enabled.';
                 Image = Apply;
 
                 trigger OnAction()

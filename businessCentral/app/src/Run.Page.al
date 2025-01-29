@@ -23,7 +23,7 @@ page 82563 "ADLSE Run"
                 field("TableCaption"; NameOfTable)
                 {
                     Caption = 'Table';
-                    ToolTip = 'Specifies the caption of the table whose data was exported.';
+                    // ToolTip = 'Specifies the caption of the table whose data was exported.';
                     Visible = not DisplayLogsForGivenTable;
                 }
 
@@ -35,7 +35,7 @@ page 82563 "ADLSE Run"
                 field("Duration"; Rec.Duration())
                 {
                     Caption = 'Duration';
-                    ToolTip = 'Specifies how long export has run.';
+                    // ToolTip = 'Specifies how long export has run.';
                 }
                 field("Error"; Rec.Error) { }
             }
@@ -50,7 +50,7 @@ page 82563 "ADLSE Run"
             {
                 ApplicationArea = All;
                 Caption = 'Clear execution log';
-                ToolTip = 'Removes the history of the export executions. This should be done periodically to free up storage space.';
+                // ToolTip = 'Removes the history of the export executions. This should be done periodically to free up storage space.';
                 Image = ClearLog;
                 Enabled = LogsFound;
 

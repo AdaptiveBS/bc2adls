@@ -32,19 +32,19 @@ report 82561 "ADLSE Schedule Task Assignment"
                     {
                         ApplicationArea = All;
                         Caption = 'Description';
-                        ToolTip = 'Specifies the description that is displayed in the job queue.';
+                        // ToolTip = 'Specifies the description that is displayed in the job queue.';
                     }
                     field(EarliestStartDateTimeControl; EarliestStartDateTime)
                     {
                         ApplicationArea = All;
                         Caption = 'Earliest Start Date / Time ';
-                        ToolTip = 'Specifies the date and time when the job queue must be executed for the first time.';
+                        // ToolTip = 'Specifies the date and time when the job queue must be executed for the first time.';
                     }
                     field(NoofMinutesBetweeenRuns; NoofMinutesBetweenRuns)
                     {
                         ApplicationArea = All;
                         Caption = 'No of minutes between runs';
-                        ToolTip = 'Specifies the minimum number of minutes that are to elapse between runs of a job queue entry. The value cannot be less than one minute.';
+                        // ToolTip = 'Specifies the minimum number of minutes that are to elapse between runs of a job queue entry. The value cannot be less than one minute.';
                     }
                 }
 
@@ -60,25 +60,25 @@ report 82561 "ADLSE Schedule Task Assignment"
                             {
                                 ApplicationArea = All;
                                 Caption = 'Run On Mondays';
-                                ToolTip = 'Specifies that the job queue entry runs on Mondays.';
+                                // ToolTip = 'Specifies that the job queue entry runs on Mondays.';
                             }
                             field(RunOnTeusdaysControl; RunOnTeusdays)
                             {
                                 ApplicationArea = All;
                                 Caption = 'Run On Tuesdays';
-                                ToolTip = 'Specifies that the job queue entry runs on Teusdays.';
+                                // ToolTip = 'Specifies that the job queue entry runs on Teusdays.';
                             }
                             field(RunOnWednesdayControl; RunOnWednesdays)
                             {
                                 ApplicationArea = All;
                                 Caption = 'Run On Wednesdays';
-                                ToolTip = 'Specifies that the job queue entry runs on Wednesdays.';
+                                // ToolTip = 'Specifies that the job queue entry runs on Wednesdays.';
                             }
                             field(RunOnThursdayControl; RunOnThursdays)
                             {
                                 ApplicationArea = All;
                                 Caption = 'Run On Thursdays';
-                                ToolTip = 'Specifies that the job queue entry runs on Thursdays.';
+                                // ToolTip = 'Specifies that the job queue entry runs on Thursdays.';
                             }
                         }
                         group(Recurrence2)
@@ -88,19 +88,19 @@ report 82561 "ADLSE Schedule Task Assignment"
                             {
                                 ApplicationArea = All;
                                 Caption = 'Run On Fridays';
-                                ToolTip = 'Specifies that the job queue entry runs on Fridays.';
+                                // ToolTip = 'Specifies that the job queue entry runs on Fridays.';
                             }
                             field(RunOnSaturdayControl; RunOnSaturdays)
                             {
                                 ApplicationArea = All;
                                 Caption = 'Run On Saturdays';
-                                ToolTip = 'Specifies that the job queue entry runs on Saturdays.';
+                                // ToolTip = 'Specifies that the job queue entry runs on Saturdays.';
                             }
                             field(RunOnSundaysControl; RunOnSundays)
                             {
                                 ApplicationArea = All;
                                 Caption = 'Run On Sundays';
-                                ToolTip = 'Specifies that the job queue entry runs on Sundays.';
+                                // ToolTip = 'Specifies that the job queue entry runs on Sundays.';
                             }
                         }
                     }

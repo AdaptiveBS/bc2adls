@@ -31,7 +31,7 @@ table 82561 "ADLSE Table"
         {
             Editable = false;
             Caption = 'Enabled';
-            ToolTip = 'Specifies the state of the table. Set this checkmark to export this table, otherwise not.';
+            //// ToolTip = 'Specifies the state of the table. Set this checkmark to export this table, otherwise not.';
 
             trigger OnValidate()
             var
@@ -60,7 +60,7 @@ table 82561 "ADLSE Table"
         {
             TableRelation = "ADLSE Export Category Table";
             DataClassification = CustomerContent;
-            ToolTip = 'Specifies the Export Category which can be linked to tables which are part of the export to Azure Datalake. The Category can be used to schedule the export.';
+            //// ToolTip = 'Specifies the Export Category which can be linked to tables which are part of the export to Azure Datalake. The Category can be used to schedule the export.';
         }
     }
 
