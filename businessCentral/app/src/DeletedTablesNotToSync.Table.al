@@ -1,4 +1,4 @@
-table 82569 "Deleted Tables Not to Sync"
+table 37077459 "Deleted Tables Not to Sync"
 {
     DataClassification = ToBeClassified;
     Caption = 'Deleted Tables Not to Sync';

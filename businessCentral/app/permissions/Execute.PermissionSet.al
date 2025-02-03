@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
-permissionset 82561 "ADLSE - Execute"
+permissionset 37077451 "ADLSE - Execute"
 {
     /// <summary>
     /// The permission set to be used when running the Azure Data Lake Storage export tool.

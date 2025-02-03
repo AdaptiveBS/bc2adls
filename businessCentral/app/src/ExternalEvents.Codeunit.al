@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
-codeunit 82574 "ADLSE External Events"
+codeunit 37077464 "ADLSE External Events"
 {
     SingleInstance = true;
 

@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
-table 82564 "ADLSE Table Last Timestamp"
+table 37077454 "ADLSE Table Last Timestamp"
 {
     /// <summary>
     /// Keeps track of the last exported timestamps of different tables.

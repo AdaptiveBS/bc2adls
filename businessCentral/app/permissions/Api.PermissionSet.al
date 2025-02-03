@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
-permissionset 82563 "ADLSE - API"
+permissionset 37077453 "ADLSE - API"
 {
     /// <summary>
     /// The permission set to be used when using the API.

@@ -1,4 +1,4 @@
-page 82564 "Deleted Tables Not To Sync"
+page 37077454 "Deleted Tables Not To Sync"
 {
     PageType = List;
     ApplicationArea = All;

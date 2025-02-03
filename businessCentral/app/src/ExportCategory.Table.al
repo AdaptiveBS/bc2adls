@@ -1,4 +1,4 @@
-table 82570 "ADLSE Export Category"
+table 37077460 "ADLSE Export Category"
 {
     Caption = 'Export Category';
     DataClassification = ToBeClassified;

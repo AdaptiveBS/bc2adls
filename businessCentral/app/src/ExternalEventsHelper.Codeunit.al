@@ -1,4 +1,4 @@
-codeunit 82576 "ADLSE External Events Helper"
+codeunit 37077466 "ADLSE External Events Helper"
 {
     Access = Internal;
     procedure CreateLink(url: Text; Id: Guid): Text[250]

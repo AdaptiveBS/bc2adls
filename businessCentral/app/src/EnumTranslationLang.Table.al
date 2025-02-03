@@ -1,5 +1,5 @@
 #pragma warning disable LC0015
-table 82568 "ADLSE Enum Translation Lang"
+table 37077458 "ADLSE Enum Translation Lang"
 #pragma warning restore
 {
     DataClassification = ToBeClassified;

@@ -1,5 +1,5 @@
 //A list page that is build on table Enum Translation
-page 82570 "ADLSE Enum Translations Lang"
+page 37077456 "ADLSE Enum Translations Lang"
 {
     PageType = List;
     ApplicationArea = All;

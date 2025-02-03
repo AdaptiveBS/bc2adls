@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
-codeunit 82563 "ADLSE Http"
+codeunit 37077453 "ADLSE Http"
 {
     Access = Internal;
 

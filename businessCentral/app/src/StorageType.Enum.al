@@ -1,4 +1,4 @@
-enum 82563 "ADLSE Storage Type"
+enum 37077453 "ADLSE Storage Type"
 {
     Access = Internal;
     Extensible = false;

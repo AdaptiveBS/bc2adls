@@ -1,6 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License. See LICENSE in the project root for license information.
-codeunit 82571 "ADLSE Installer"
+codeunit 37077461 "ADLSE Installer"
 {
     Subtype = Install;
     Access = Internal;
