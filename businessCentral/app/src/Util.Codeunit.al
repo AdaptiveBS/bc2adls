@@ -163,7 +163,7 @@ codeunit 82564 "ADLSE Util"
             if HasDuplicateTableNameInExportList(TableID, OrigTableName, ADLSESetup."Use Table Captions") then
                 CompliantTableName := StrSubstNo(ConcatNameIdTok, GetDataLakeCompliantName(OrigTableName), TableID)
             else
-                CompliantTableName := StrSubstNo(ConcatNameIdTok, GetDataLakeCompliantName(OrigTableName), TableID);
+                CompliantTableName := GetDataLakeCompliantName(OrigTableName);
         end else
             CompliantTableName := StrSubstNo(ConcatNameIdTok, GetDataLakeCompliantName(OrigTableName), TableID);
 
