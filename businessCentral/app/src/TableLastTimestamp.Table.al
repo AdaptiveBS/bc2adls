@@ -104,6 +104,7 @@ table 82564 "ADLSE Table Last Timestamp"
         RecordRef.Open(TableID);
         FilterDateTime := CreateDateTime(StartDate, 0T);
 
+        RecordRef.SetView(TimestampAscendingSortViewLbl);
         ModifiedAtFieldRef := RecordRef.Field(RecordRef.SystemModifiedAtNo());
         ModifiedAtFieldRef.SetFilter('>=%1', FilterDateTime);
 

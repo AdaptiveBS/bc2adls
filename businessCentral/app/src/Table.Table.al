@@ -66,6 +66,12 @@ table 82561 "ADLSE Table"
             ToolTip = 'Specifies the starting date for the initial data load. Only records with SystemModifiedAt >= this date will be exported on the first export. Leave blank to export all historical data.';
             Access = Internal;
         }
+        field(18; "Initial Load End Date"; Date)
+        {
+            Caption = 'Initial Load End Date';
+            ToolTip = 'Specifies an end date to limit each export run to a manageable batch of historical records, e.g. one month or year at a time, so a large initial load can run in deltas instead of one long run. Only records with SystemModifiedAt <= this date are exported while set. The field is cleared automatically once all records up to this date have been exported; set it again to process the next batch. Leave blank for normal, unbounded export.';
+            Access = Internal;
+        }
         field(16; "Process Type"; Enum "ADLSE Process Type")
         {
             Caption = 'Process Type';
@@ -73,12 +79,6 @@ table 82561 "ADLSE Table"
             ObsoleteState = Removed;
             ObsoleteReason = 'This field will be removed in a future release because readuncommitted will be the default behavior because of performance.';
             ToolTip = 'Specifies how this table should be processed during export. Standard uses normal processing, Ignore Read Isolation disables read isolation for performance, and Commit Externally uses external commit for large tables.';
-            Access = Internal;
-        }
-        field(18; "Initial Load End Date"; Date)
-        {
-            Caption = 'Initial Load End Date';
-            ToolTip = 'Specifies an end date to limit each export run to a manageable batch of historical records, e.g. one month or year at a time, so a large initial load can run in deltas instead of one long run. Only records with SystemModifiedAt <= this date are exported while set. The field is cleared automatically once all records up to this date have been exported; set it again to process the next batch. Leave blank for normal, unbounded export.';
             Access = Internal;
         }
     }
