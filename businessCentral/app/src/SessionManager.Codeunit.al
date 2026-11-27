@@ -126,6 +126,7 @@ codeunit 82570 "ADLSE Session Manager"
         exit(Status = "ADLSE Run State"::None);
     end;
 
+
     procedure StartExportFromPendingTables()
     var
         ADLSESetup: Record "ADLSE Setup";
