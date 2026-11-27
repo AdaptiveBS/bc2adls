@@ -44,6 +44,30 @@ page 82575 "ADLSE Table API v12"
                 {
                     Editable = false;
                 }
+                field(objectID; Rec."Table ID")
+                {
+                    Caption = 'Object ID';
+                }
+                field(entityName; ADLSEUtil.GetDataLakeCompliantTableName(Rec."Table ID"))
+                {
+                    Caption = 'Entity Name';
+                    Editable = false;
+                }
+                field(displayName; ADLSEUtil.GetTableName(Rec."Table ID"))
+                {
+                    Caption = 'Display Name';
+                    Editable = false;
+                }
+                field(description; StrSubstNo(RepresentsTableTxt, ADLSEUtil.GetTableName(Rec."Table ID")))
+                {
+                    Caption = 'Description';
+                    Editable = false;
+                }
+                field(enabledADLSE; Rec.Enabled)
+                {
+                    Caption = 'Enabled ADLSE';
+                    Editable = false;
+                }
             }
             part(adlseField; "ADLSE Field API v12")
             {
@@ -53,6 +77,10 @@ page 82575 "ADLSE Table API v12"
             }
         }
     }
+
+    var
+        ADLSEUtil: Codeunit "ADLSE Util";
+        RepresentsTableTxt: Label 'Represents the table %1', Comment = '%1: table caption';
 
     [ServiceEnabled]
     procedure Reset(var ActionContext: WebServiceActionContext)

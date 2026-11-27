@@ -40,9 +40,55 @@ page 82573 "ADLSE Field API v12"
                 {
                     Editable = false;
                 }
+                field(no; Rec."Field ID")
+                {
+                    Caption = 'No.';
+                }
+                field(name; name)
+                {
+                    Caption = 'name';
+                }
+                field(dataFormat; DataFormat)
+                {
+                    Caption = 'dataFormat';
+                }
+                field(displayName; FieldRec.FieldName)
+                {
+                    Caption = 'displayName';
+                }
+                field(maximumLength; FieldRec.Len)
+                {
+                    Caption = 'maximumLength';
+                }
+                field(enabledADLSE; Rec.Enabled)
+                {
+                    Caption = 'Enabled ADLSE';
+                }
             }
         }
     }
+
+    var
+        FieldRec: Record System.Reflection."Field";
+        DataFormat: Text;
+        name: Text;
+
+    trigger OnAfterGetRecord()
+    var
+        ADLSEUtil: Codeunit "ADLSE Util";
+        ADLSECDMUtil: Codeunit "ADLSE CDM Util";
+        RecordRef: RecordRef;
+        FieldRef: FieldRef;
+        AppliedTraits: JsonArray;
+    begin
+        Clear(FieldRec);
+        if FieldRec.Get(Rec."Table ID", Rec."Field ID") then;
+        RecordRef.Open(Rec."Table ID");
+        FieldRef := RecordRef.Field(Rec."Field ID");
+        ADLSECDMUtil.GetCDMAttributeDetails(FieldRef.Type(), DataFormat, AppliedTraits);
+        name := ADLSEUtil.GetDataLakeCompliantFieldName(FieldRef);
+        RecordRef.Close();
+    end;
 
     [ServiceEnabled]
     procedure Disable(var ActionContext: WebServiceActionContext)
